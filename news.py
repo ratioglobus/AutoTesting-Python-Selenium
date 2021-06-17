@@ -24,12 +24,12 @@ try:
     # Разворачиваем браузер на полный экран
     browser.maximize_window()
 
-    # Уменьшаем зум страницы (KAK)
+    # Уменьшаем зум страницы ()
     # browser.execute_script("document.body.style.zoom = '75%'")
 
     # Авторизация в системе (логин + пароль + ввод)
-    login = findBySelector('name', 'login').send_keys('futuret')
-    password = findBySelector('name', 'password').send_keys('overlord911')
+    login = findBySelector('name', 'login').send_keys('')
+    password = findBySelector('name', 'password').send_keys('')
     send = browser.find_element_by_class_name('btn-footer').click()
 
     # Нажимаем кнопку "Новый вызов"
